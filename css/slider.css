@@ -1,0 +1,19 @@
+.checkbox {
+  display: none;
+}
+
+#check--item2:checked ~ .services__slide-box .services__slide-item {
+  transform: translateX(-100%);
+}
+#check--item3:checked ~ .services__slide-box .services__slide-item {
+  transform: translateX(-200%);
+}
+#check--item4:checked ~ .services__slide-box .services__slide-item {
+  transform: translateX(-300%);
+}
+#check--item5:checked ~ .services__slide-box .services__slide-item {
+  transform: translateX(-400%);
+}
+#check--item6:checked ~ .services__slide-box .services__slide-item {
+  transform: translateX(-500%);
+}
