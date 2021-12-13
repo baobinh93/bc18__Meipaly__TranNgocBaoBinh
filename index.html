@@ -572,12 +572,14 @@
     <script>
       const checkBoxList = $(".checkbox");
       const checkLabelList = $(".services__slide-btn__label");
-      const length = checkBoxList.length;
+      console.log(checkLabelList);
 
+      const length = checkBoxList.length;
       let index = 1;
       for (let i = 0; i < length; i++) {
         checkLabelList[i].onclick = function () {
           index = i;
+          console.log(index);
         };
       }
       function autoSlider() {
