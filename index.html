@@ -16,6 +16,11 @@
       href="https://fonts.googleapis.com/css2?family=Oswald:wght@200;300;400;500;600;700&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
+    />
+
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/slider.css" />
   </head>
@@ -264,12 +269,18 @@
                 <div class="showcase__item-img showcase__item-1"></div>
                 <div class="showcase__item-overlay">
                   <div class="item-overlay__zoom">
-                    <i
-                      class="
-                        item-overlay__overlay-icon
-                        fa-solid fa-magnifying-glass-plus
-                      "
-                    ></i>
+                    <a
+                      href="./img/showcase_img_1.webp"
+                      data-fancybox="gallery"
+                      data-caption="Caption #1"
+                    >
+                      <i
+                        class="
+                          item-overlay__overlay-icon
+                          fa-solid fa-magnifying-glass-plus
+                        "
+                      ></i>
+                    </a>
                   </div>
                   <div class="item-overlay__tag">
                     <p class="item-overlay__tag-title">LOGO</p>
@@ -281,12 +292,18 @@
                 <div class="showcase__item-img showcase__item-2"></div>
                 <div class="showcase__item-overlay">
                   <div class="item-overlay__zoom">
-                    <i
-                      class="
-                        item-overlay__overlay-icon
-                        fa-solid fa-magnifying-glass-plus
-                      "
-                    ></i>
+                    <a
+                      href="./img/showcase_img_2.webp"
+                      data-fancybox="gallery"
+                      data-caption="Caption #2"
+                    >
+                      <i
+                        class="
+                          item-overlay__overlay-icon
+                          fa-solid fa-magnifying-glass-plus
+                        "
+                      ></i>
+                    </a>
                   </div>
                   <div class="item-overlay__tag">
                     <p class="item-overlay__tag-title">LOGO</p>
@@ -298,12 +315,18 @@
                 <div class="showcase__item-img showcase__item-3"></div>
                 <div class="showcase__item-overlay">
                   <div class="item-overlay__zoom">
-                    <i
-                      class="
-                        item-overlay__overlay-icon
-                        fa-solid fa-magnifying-glass-plus
-                      "
-                    ></i>
+                    <a
+                      href="./img/showcase_img_3.webp"
+                      data-fancybox="gallery"
+                      data-caption="Caption #3"
+                    >
+                      <i
+                        class="
+                          item-overlay__overlay-icon
+                          fa-solid fa-magnifying-glass-plus
+                        "
+                      ></i>
+                    </a>
                   </div>
                   <div class="item-overlay__tag">
                     <p class="item-overlay__tag-title">LOGO</p>
@@ -311,16 +334,22 @@
                   </div>
                 </div>
               </div>
-              <div class="showcase__item showcase__item-4">
+              <div class="showcase__item">
                 <div class="showcase__item-img showcase__item-4"></div>
                 <div class="showcase__item-overlay">
                   <div class="item-overlay__zoom">
-                    <i
-                      class="
-                        item-overlay__overlay-icon
-                        fa-solid fa-magnifying-glass-plus
-                      "
-                    ></i>
+                    <a
+                      href="./img/showcase_img_5.webp"
+                      data-fancybox="gallery"
+                      data-caption="Caption #4"
+                    >
+                      <i
+                        class="
+                          item-overlay__overlay-icon
+                          fa-solid fa-magnifying-glass-plus
+                        "
+                      ></i>
+                    </a>
                   </div>
                   <div class="item-overlay__tag">
                     <p class="item-overlay__tag-title">LOGO</p>
@@ -332,12 +361,18 @@
                 <div class="showcase__item-img showcase__item-5"></div>
                 <div class="showcase__item-overlay">
                   <div class="item-overlay__zoom">
-                    <i
-                      class="
-                        item-overlay__overlay-icon
-                        fa-solid fa-magnifying-glass-plus
-                      "
-                    ></i>
+                    <a
+                      href="./img/showcase_img_6.webp"
+                      data-fancybox="gallery"
+                      data-caption="Caption #5"
+                    >
+                      <i
+                        class="
+                          item-overlay__overlay-icon
+                          fa-solid fa-magnifying-glass-plus
+                        "
+                      ></i>
+                    </a>
                   </div>
                   <div class="item-overlay__tag">
                     <p class="item-overlay__tag-title">LOGO</p>
@@ -349,12 +384,18 @@
                 <div class="showcase__item-img showcase__item-6"></div>
                 <div class="showcase__item-overlay">
                   <div class="item-overlay__zoom">
-                    <i
-                      class="
-                        item-overlay__overlay-icon
-                        fa-solid fa-magnifying-glass-plus
-                      "
-                    ></i>
+                    <a
+                      href="./img/showcase_img_7.webp"
+                      data-fancybox="gallery"
+                      data-caption="Caption #6"
+                    >
+                      <i
+                        class="
+                          item-overlay__overlay-icon
+                          fa-solid fa-magnifying-glass-plus
+                        "
+                      ></i>
+                    </a>
                   </div>
                   <div class="item-overlay__tag">
                     <p class="item-overlay__tag-title">LOGO</p>
@@ -516,5 +557,40 @@
         </div>
       </footer>
     </div>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+      integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
+    <script>
+      $('[data-fancybox="gallery"]').fancybox({
+        loop: true,
+      });
+    </script>
+    <script>
+      const checkBoxList = $(".checkbox");
+      const checkLabelList = $(".services__slide-btn__label");
+      console.log(checkLabelList);
+
+      const length = checkBoxList.length;
+      let index = 1;
+      for (let i = 0; i < length; i++) {
+        checkLabelList[i].onclick = function () {
+          index = i;
+          console.log(index);
+        };
+      }
+      function autoSlider() {
+        // console.log(index);
+        if (index >= length) {
+          index = 0;
+        }
+        checkBoxList[index].checked = true;
+        index++;
+      }
+      setInterval(autoSlider, 4000);
+    </script>
   </body>
 </html>
