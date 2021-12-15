@@ -251,54 +251,7 @@ nav {
 .slick-dots .slick-active button:hover {
   background-color: var(--color-red);
 }
-/* .services__slide-btn {
-  margin-top: 30px;
-  display: flex;
-  justify-content: center;
-}
-.services__slide-btn__label {
-  margin: 0 12px;
-  width: 20px;
-  height: 20px;
-  border-radius: 50%;
-  background-color: var(--color-gray-checkBox);
-  cursor: pointer;
-} */
-/* 
-#check--item1:checked ~ .services__slide-btn label[for="check--item1"],
-#check--item2:checked ~ .services__slide-btn label[for="check--item2"],
-#check--item3:checked ~ .services__slide-btn label[for="check--item3"],
-#check--item4:checked ~ .services__slide-btn label[for="check--item4"],
-#check--item5:checked ~ .services__slide-btn label[for="check--item5"],
-#check--item6:checked ~ .services__slide-btn label[for="check--item6"] {
-  background-color: var(--color-red);
-} */
 
-/* .services__slide-btn .services__slide-btn__label:hover {
-  background-color: var(--color-white);
-}
-.label--active {
-  position: relative;
-}
-.label--active::before {
-  content: "";
-  display: block;
-  position: absolute;
-  top: 0;
-  bottom: 0;
-  left: 0;
-  right: 0;
-  border-radius: 50%;
-  background-color: var(--color-red);
-}
-#check--item1:checked ~ .services__slide-btn .label--active::before,
-#check--item2:checked ~ .services__slide-btn .label--active::before,
-#check--item3:checked ~ .services__slide-btn .label--active::before,
-#check--item4:checked ~ .services__slide-btn .label--active::before,
-#check--item5:checked ~ .services__slide-btn .label--active::before,
-#check--item6:checked ~ .services__slide-btn .label--active::before {
-  display: none;
-} */
 /* --- end services --- */
 
 /* --- start showcase --- */

@@ -23,13 +23,13 @@
     <link
       rel="stylesheet"
       type="text/css"
-      href="./slick-1.8.1/slick/slick.css"
+      href="./libraries/slick-1.8.1/slick/slick.css"
     />
 
     <link
       rel="stylesheet"
       type="text/css"
-      href="./slick-1.8.1/slick/slick-theme.css"
+      href="./libraries/slick-1.8.1/slick/slick-theme.css"
     />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/slider.css" />
@@ -84,42 +84,7 @@
             <br />
             our employees the best training
           </p>
-          <!-- <input
-            type="radio"
-            class="checkbox"
-            name="check_slide_item"
-            id="check--item1"
-          />
-          <input
-            type="radio"
-            class="checkbox"
-            name="check_slide_item"
-            id="check--item2"
-          />
-          <input
-            type="radio"
-            class="checkbox"
-            name="check_slide_item"
-            id="check--item3"
-          />
-          <input
-            type="radio"
-            class="checkbox"
-            name="check_slide_item"
-            id="check--item4"
-          />
-          <input
-            type="radio"
-            class="checkbox"
-            name="check_slide_item"
-            id="check--item5"
-          />
-          <input
-            type="radio"
-            class="checkbox"
-            name="check_slide_item"
-            id="check--item6"
-          /> -->
+
           <div class="services__slide-box">
             <div class="services__slide-content">
               <div class="services__slide-item" id="item1">
@@ -182,85 +147,8 @@
                   DEVELOPMENT
                 </p>
               </div>
-              <!-- <div class="services__slide-item" id="item1--copy">
-                <div class="slide-item__symbol">
-                  <i class="slide-item__icon fas fa-blog"></i>
-                </div>
-                <p class="slide-item__name">
-                  WEBSIDE <br />
-                  DEVELOPMENT
-                </p>
-              </div>
-              <div class="services__slide-item" id="item2--copy">
-                <div class="slide-item__symbol">
-                  <i class="slide-item__icon fab fa-battle-net"></i>
-                </div>
-                <p class="slide-item__name">
-                  SEO & CONTENT
-                  <br />
-                  WRITING
-                </p>
-              </div>
-              <div class="services__slide-item" id="item3--copy">
-                <div class="slide-item__symbol">
-                  <i class="slide-item__icon fas fa-memory"></i>
-                </div>
-                <p class="slide-item__name">
-                  APP MOBILE
-                  <br />
-                  DEVELOPMENT
-                </p>
-              </div>
-              <div class="services__slide-item" id="item4--copy">
-                <div class="slide-item__symbol">
-                  <i class="slide-item__icon fas fa-dice-d6"></i>
-                </div>
-                <p class="slide-item__name">
-                  APP MOBILE
-                  <br />
-                  DEVELOPMENT
-                </p>
-              </div>
-
-              <div class="services__slide-item" id="item5--copy">
-                <div class="slide-item__symbol">
-                  <i class="slide-item__icon fab fa-500px"></i>
-                </div>
-                <p class="slide-item__name">
-                  APP MOBILE
-                  <br />
-                  DEVELOPMENT
-                </p>
-              </div> -->
             </div>
           </div>
-          <!-- <div class="services__slide-btn">
-            <label
-              for="check--item1"
-              class="services__slide-btn__label label--active"
-            >
-            </label>
-            <label
-              for="check--item2"
-              class="services__slide-btn__label"
-            ></label>
-            <label
-              for="check--item3"
-              class="services__slide-btn__label"
-            ></label>
-            <label
-              for="check--item4"
-              class="services__slide-btn__label"
-            ></label>
-            <label
-              for="check--item5"
-              class="services__slide-btn__label"
-            ></label>
-            <label
-              for="check--item6"
-              class="services__slide-btn__label"
-            ></label>
-          </div> -->
         </div>
       </section>
       <section class="showcase" id="showcase">
@@ -454,19 +342,33 @@
         <div class="content__box--pad-100 wide">
           <div class="summary__box">
             <div class="summary__item">
-              <div class="summary__item-number">8,705</div>
+              <div
+                class="summary__item-number counter"
+                id="projectsCompleted-count"
+              >
+                8,705
+              </div>
               <div class="summary__item-name">PROJECTS COMPLETED</div>
             </div>
             <div class="summary__item">
-              <div class="summary__item-number">480</div>
+              <div
+                class="summary__item-number counter"
+                id="activeClients-count"
+              >
+                480
+              </div>
               <div class="summary__item-name">ACTIVE CLIENTS</div>
             </div>
             <div class="summary__item">
-              <div class="summary__item-number">625</div>
+              <div class="summary__item-number counter" id="cupsOfCoffee-count">
+                625
+              </div>
               <div class="summary__item-name">CUPS OF COFFEE</div>
             </div>
             <div class="summary__item">
-              <div class="summary__item-number">9,774</div>
+              <div class="summary__item-number counter" id="happyClients-count">
+                9,774
+              </div>
               <div class="summary__item-name">HAPPY CLIENTS</div>
             </div>
           </div>
@@ -571,37 +473,12 @@
       referrerpolicy="no-referrer"
     ></script>
     <script src="https://cdn.jsdelivr.net/npm/@fancyapps/ui@4.0/dist/fancybox.umd.js"></script>
-    <script>
-      $('[data-fancybox="gallery"]').fancybox({
-        loop: true,
-      });
-    </script>
-    <!-- <script>
-      const checkBoxList = $(".checkbox");
-      const checkLabelList = $(".services__slide-btn__label");
-      console.log(checkLabelList);
-
-      const length = checkBoxList.length;
-      let index = 1;
-      for (let i = 0; i < length; i++) {
-        checkLabelList[i].onclick = function () {
-          index = i;
-          console.log(index);
-        };
-      }
-      function autoSlider() {
-        if (index >= length) {
-          index = 0;
-        }
-        checkBoxList[index].checked = true;
-        index++;
-      }
-      setInterval(autoSlider, 4000);
-    </script> -->
     <script
       type="text/javascript"
       src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
     ></script>
+    <script src="./libraries/Counting-Up-To-Numerical-Values-On-Scroll-jQuery-Countup-js/jquery.countup.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/waypoints/4.0.1/jquery.waypoints.min.js"></script>
     <script>
       $(document).ready(function () {
         $(".services__slide-content").slick({
@@ -612,6 +489,14 @@
           arrows: false,
           dots: true,
         });
+      });
+    </script>
+    <script>
+      $(".counter").countUp();
+    </script>
+    <script>
+      $('[data-fancybox="gallery"]').fancybox({
+        loop: true,
       });
     </script>
   </body>
