@@ -20,7 +20,17 @@
       rel="stylesheet"
       href="https://cdn.jsdelivr.net/npm/@fancyapps/ui/dist/fancybox.css"
     />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./slick-1.8.1/slick/slick.css"
+    />
 
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="./slick-1.8.1/slick/slick-theme.css"
+    />
     <link rel="stylesheet" href="./css/style.css" />
     <link rel="stylesheet" href="./css/slider.css" />
   </head>
@@ -74,7 +84,7 @@
             <br />
             our employees the best training
           </p>
-          <input
+          <!-- <input
             type="radio"
             class="checkbox"
             name="check_slide_item"
@@ -109,9 +119,9 @@
             class="checkbox"
             name="check_slide_item"
             id="check--item6"
-          />
+          /> -->
           <div class="services__slide-box">
-            <div class="services__slide-list">
+            <div class="services__slide-content">
               <div class="services__slide-item" id="item1">
                 <div class="slide-item__symbol">
                   <i class="slide-item__icon fas fa-blog"></i>
@@ -172,7 +182,7 @@
                   DEVELOPMENT
                 </p>
               </div>
-              <div class="services__slide-item" id="item1--copy">
+              <!-- <div class="services__slide-item" id="item1--copy">
                 <div class="slide-item__symbol">
                   <i class="slide-item__icon fas fa-blog"></i>
                 </div>
@@ -221,10 +231,10 @@
                   <br />
                   DEVELOPMENT
                 </p>
-              </div>
+              </div> -->
             </div>
           </div>
-          <div class="services__slide-btn">
+          <!-- <div class="services__slide-btn">
             <label
               for="check--item1"
               class="services__slide-btn__label label--active"
@@ -250,7 +260,7 @@
               for="check--item6"
               class="services__slide-btn__label"
             ></label>
-          </div>
+          </div> -->
         </div>
       </section>
       <section class="showcase" id="showcase">
@@ -462,9 +472,6 @@
           </div>
         </div>
       </section>
-      <!-- <section class="experience__background">
-        <div class="experience__background--img"></div>
-      </section> -->
 
       <section class="experience" id="experience">
         <div class="content__box--pad-100 wide">
@@ -569,7 +576,7 @@
         loop: true,
       });
     </script>
-    <script>
+    <!-- <script>
       const checkBoxList = $(".checkbox");
       const checkLabelList = $(".services__slide-btn__label");
       console.log(checkLabelList);
@@ -590,6 +597,22 @@
         index++;
       }
       setInterval(autoSlider, 4000);
+    </script> -->
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.min.js"
+    ></script>
+    <script>
+      $(document).ready(function () {
+        $(".services__slide-content").slick({
+          slidesToShow: 5,
+          slidesToScroll: 1,
+          autoplay: true,
+          autoplaySpeed: 3000,
+          arrows: false,
+          dots: true,
+        });
+      });
     </script>
   </body>
 </html>

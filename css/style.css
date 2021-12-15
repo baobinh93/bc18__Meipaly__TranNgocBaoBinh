@@ -189,24 +189,14 @@ nav {
 .services__slide-box {
   margin-top: 30px;
   width: 100%;
-  height: 274px;
+}
 
-  position: relative;
-  overflow: hidden;
-}
-.services__slide-list {
-  display: flex;
-  flex-wrap: nowrap;
-  align-content: space-between;
-  margin-left: -10px;
-  margin-right: -10px;
-}
 .services__slide-item {
   max-width: 20%;
   flex: 0 0 20%;
   background: var(--color-white);
-  height: 270px;
-  display: flex;
+  height: 230px;
+  display: flex !important;
   flex-direction: column;
   justify-content: center;
   align-items: center;
@@ -217,23 +207,18 @@ nav {
   transition: transform 1s ease-in-out;
   order: 0;
 }
-.services__slide-item:hover::after {
+.services__slide-item::after {
   content: "";
   position: absolute;
   top: 0;
-  bottom: 0;
+  bottom: 100%;
   right: 10px;
   width: 5px;
   background: var(--color-red);
-  animation: slider-item-border-right 0.3s linear;
+  transition: 0.3s linear;
 }
-@keyframes slider-item-border-right {
-  from {
-    bottom: 100%;
-  }
-  to {
-    bottom: 0;
-  }
+.services__slide-item:hover::after {
+  bottom: 0;
 }
 
 .slide-item__symbol {
@@ -247,7 +232,26 @@ nav {
   color: var(--color-gray);
   font-weight: 400;
 }
-.services__slide-btn {
+.slick-dots li button {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background-color: var(--color-gray-checkBox);
+  color: transparent !important;
+}
+.slick-dots li button::before {
+  content: "";
+}
+.slick-dots li button:hover {
+  background-color: var(--color-white);
+}
+.slick-dots .slick-active button {
+  background-color: var(--color-red);
+}
+.slick-dots .slick-active button:hover {
+  background-color: var(--color-red);
+}
+/* .services__slide-btn {
   margin-top: 30px;
   display: flex;
   justify-content: center;
@@ -259,8 +263,8 @@ nav {
   border-radius: 50%;
   background-color: var(--color-gray-checkBox);
   cursor: pointer;
-}
-
+} */
+/* 
 #check--item1:checked ~ .services__slide-btn label[for="check--item1"],
 #check--item2:checked ~ .services__slide-btn label[for="check--item2"],
 #check--item3:checked ~ .services__slide-btn label[for="check--item3"],
@@ -268,9 +272,9 @@ nav {
 #check--item5:checked ~ .services__slide-btn label[for="check--item5"],
 #check--item6:checked ~ .services__slide-btn label[for="check--item6"] {
   background-color: var(--color-red);
-}
+} */
 
-.services__slide-btn .services__slide-btn__label:hover {
+/* .services__slide-btn .services__slide-btn__label:hover {
   background-color: var(--color-white);
 }
 .label--active {
@@ -294,7 +298,7 @@ nav {
 #check--item5:checked ~ .services__slide-btn .label--active::before,
 #check--item6:checked ~ .services__slide-btn .label--active::before {
   display: none;
-}
+} */
 /* --- end services --- */
 
 /* --- start showcase --- */
